@@ -20,22 +20,22 @@ int main()
 }
 // 1~100까지 소수 출력하기 */
 
-#include<stdlib.h>
+
 #include<stdio.h>
 int main(void)
 {
-    int result = 0;
+    int sum = 0;
     int k = 0;
-    for(int i=2; i<=100, i++)
+    for(int i=2; i<=100; i++)
 {
-    for (k=2; k<i;k++)
+    for (k=2; k<i; k++)
 {
     if(i % k==0) break;
 }
 if(k == i)
-result += k;
+sum += k;
 }
-printf("1부터 100까지 소수의 합 = %d\n, result");
-system("pause")
+printf("1부터 100까지 소수의 합 = %d\n", sum);
+system("pause");
 
-}
+};
